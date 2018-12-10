@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ASP.NET SignalR股票价格实时展示程序</title>
+    <link rel="stylesheet" href="StockTicker.css" />
+</head>
+<body>
+    <h1>ASP.NET SignalR股票价格实时展示程序</h1>
+
+    <h2>实时股票价格</h2>
+    <div id="stockTable">
+        <table border="1">
+            <thead>
+                <tr><th>股票代码</th><th>当前价格</th><th>开盘价格</th><th>涨幅</th><th>%</th></tr>
+            </thead>
+            <tbody>
+                <tr class="loading"><td colspan="5">loading...</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--Script references. -->
+    <script src="/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="/Scripts/jquery.signalR-2.1.2.min.js"></script>
+    <script src="/signalr/hubs"></script>
+    <script src="StockTicker.js"></script>
+</body>
+</html>

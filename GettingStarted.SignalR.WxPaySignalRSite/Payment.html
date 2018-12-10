@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div>
+        <p>正在发起支付，请稍后。。。</p>
+    </div>
+
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/jquery.signalR-2.1.2.min.js"></script>
+    <script src="signalr/hubs"></script>
+    <script type="text/javascript">
+        $(function () {
+            var proxyHub = $.connection.wxPaymentHubMini;
+
+            proxyHub.client.broadWxPaymentResult = function (paymentResult) {
+                if (paymentResult.IsSuccess) {
+                    window.location.href = "Success.html";
+                }
+            };
+
+            //创建连接
+            //$.connection.hub.logging = true;//启用日志
+            $.connection.hub.start();
+        });
+
+    </script>
+</body>
+</html>

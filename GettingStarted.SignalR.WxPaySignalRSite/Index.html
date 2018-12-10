@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div>
+        <input type="button" id="btnNotify" name="btnNotify" value="更新支付结果" />
+    </div>
+
+    <script src="/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="/Scripts/jquery.signalR-2.1.2.min.js"></script>
+    <script src="/signalr/hubs"></script>
+    <script type="text/javascript">
+        $(function () {
+            var proxyHub = $.connection.wxPaymentHubMini;
+
+            //创建连接
+            //$.connection.hub.logging = true;//启用日志
+            $.connection.hub.start().done(function () {
+                $("#btnNotify").click(function () {
+                    proxyHub.server.updateWxPaymentResult().done(function (data) {
+                        if (data) {
+                            alert("更新支付结果成功!");
+                        }
+                    });
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>

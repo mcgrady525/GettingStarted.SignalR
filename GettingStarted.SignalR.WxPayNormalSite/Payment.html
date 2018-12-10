@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div>
+        <p>正在发起支付，请稍后。。。</p>
+    </div>
+
+    <script src="Scripts/jquery-1.8.2.js"></script>
+    <script type="text/javascript">
+        var intervalId = null;
+
+        function m1() {
+            var url = "WxPayHandler.ashx?action=GetPaymentResult";
+            $.post(url, null, function (data) {
+                if (data.success) {
+                    if (intervalId!= null) {
+                        clearInterval(intervalId);
+                    }
+                    window.location.href = "Success.html";
+                }
+            });
+        };
+        
+        $(function () {
+            intervalId = setInterval(m1, 10000, null);
+        });
+
+    </script>
+</body>
+</html>

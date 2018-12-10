@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GettingStarted.SignalR.ChatSite", "GettingStarted.SignalR.ChatSite\GettingStarted.SignalR.ChatSite.csproj", "{5DC6AA3F-2DF0-4BC9-8757-DB2EBD291D6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GettingStarted.SignalR.StockTickerSite", "GettingStarted.SignalR.StockTickerSite\GettingStarted.SignalR.StockTickerSite.csproj", "{5E7D63D0-C7B6-437E-A7EC-54BEC4658CF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GettingStarted.SignalR.WxPayNormalSite", "GettingStarted.SignalR.WxPayNormalSite\GettingStarted.SignalR.WxPayNormalSite.csproj", "{B2EFA3A6-8ACF-4C5E-A7B6-9388089DAD5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GettingStarted.SignalR.WxPaySignalRSite", "GettingStarted.SignalR.WxPaySignalRSite\GettingStarted.SignalR.WxPaySignalRSite.csproj", "{A1943D84-7C5E-49D7-B933-AE650F70856F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DC6AA3F-2DF0-4BC9-8757-DB2EBD291D6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DC6AA3F-2DF0-4BC9-8757-DB2EBD291D6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DC6AA3F-2DF0-4BC9-8757-DB2EBD291D6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DC6AA3F-2DF0-4BC9-8757-DB2EBD291D6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E7D63D0-C7B6-437E-A7EC-54BEC4658CF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E7D63D0-C7B6-437E-A7EC-54BEC4658CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E7D63D0-C7B6-437E-A7EC-54BEC4658CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E7D63D0-C7B6-437E-A7EC-54BEC4658CF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2EFA3A6-8ACF-4C5E-A7B6-9388089DAD5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2EFA3A6-8ACF-4C5E-A7B6-9388089DAD5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2EFA3A6-8ACF-4C5E-A7B6-9388089DAD5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2EFA3A6-8ACF-4C5E-A7B6-9388089DAD5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1943D84-7C5E-49D7-B933-AE650F70856F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1943D84-7C5E-49D7-B933-AE650F70856F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1943D84-7C5E-49D7-B933-AE650F70856F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1943D84-7C5E-49D7-B933-AE650F70856F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

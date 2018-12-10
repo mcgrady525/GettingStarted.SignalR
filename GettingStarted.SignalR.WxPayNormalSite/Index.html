@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div>
+        <input type="button" id="btnNotify" name="btnNotify" value="更新支付结果" />
+    </div>
+
+    <script src="Scripts/jquery-1.8.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#btnNotify").click(function () {
+                var url = "WxPayHandler.ashx?action=NotifyPaymentResult";
+                $.post(url, null, function (data) {
+                    if (data.success) {
+                        alert(data.msg);
+                    }
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>
