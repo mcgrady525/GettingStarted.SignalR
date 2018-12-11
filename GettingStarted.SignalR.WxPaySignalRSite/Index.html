@@ -18,7 +18,7 @@
             var proxyHub = $.connection.wxPaymentHubMini;
 
             //创建连接
-            //$.connection.hub.logging = true;//启用日志
+            $.connection.hub.logging = true;//启用日志
             $.connection.hub.start().done(function () {
                 $("#btnNotify").click(function () {
                     proxyHub.server.updateWxPaymentResult().done(function (data) {
